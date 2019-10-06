@@ -1,0 +1,6 @@
+#
+# 7. Get the interal IP address of the overlord container without starting its
+# shell and in one command.
+#
+
+docker inspect --format='{{.NetworkSettings.IPAddress}}' overlord
