@@ -1,0 +1,16 @@
+FROM alpine
+
+RUN apk update && \
+	apk upgrade && \
+	apk add vim
+
+ENTRYPOINT ["vim"]
+
+MAINTAINER rreedy
+
+#
+# To build and run:
+#
+# docker build --tag vim-image
+# docker run --rm --interactive --tty vim-image
+#
