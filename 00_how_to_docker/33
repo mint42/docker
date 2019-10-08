@@ -1,1 +1,6 @@
-33. Delete all the container images stored on the Char virtual machine, in one command as well.
+#
+# 33. Delete all the container images stored on the Char virtual machine, in
+# one command as well.
+#
+
+docker image rm --force

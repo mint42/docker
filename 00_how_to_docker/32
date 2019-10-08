@@ -1,1 +1,6 @@
-32. Force quit and delete all the containers (whatever their status), in one command.
+#
+# 32. Force quit and delete all the containers (whatever their status), in one
+# command.
+#
+
+docker container rm --force

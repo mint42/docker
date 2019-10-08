@@ -1,1 +1,5 @@
-23. Create an overlay-type internal network that you will name overmind.
+#
+# 23. Create an overlay-type internal network that you will name overmind.
+#
+
+docker network create --driver overlay --internal overmind

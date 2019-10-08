@@ -2,3 +2,5 @@
 # 22. Turn Aiur into a slave of the local swarm in which Char is leader (the
 # command to take control of Aiur is not requested).
 #
+
+docker swarm join --advertise-addr 192.168.99.101 --token SWMTKN-1-64mbtpcstuzqa1ihqz1tyfpktj6vd4tgtrkpajh93l63a1u3zg-4yzhci3id6dg9hbghpyes5icj 192.168.99.100:2377
