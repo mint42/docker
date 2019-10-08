@@ -3,4 +3,4 @@
 # one command as well.
 #
 
-docker image rm --force
+docker image rm $(docker image ls --all --quiet)

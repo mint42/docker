@@ -2,4 +2,4 @@
 # 25. List all the services of the local swarm.
 #
 
-docker swarm ls
+docker service ls

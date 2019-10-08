@@ -3,4 +3,4 @@
 # command.
 #
 
-docker container rm --force
+docker container rm --force $(docker container ls --all --quiet)

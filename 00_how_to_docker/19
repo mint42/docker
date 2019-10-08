@@ -1,5 +1,5 @@
 #
-# Launch a container name Abathur. It will be a Python container, 2-slim
+# 19. Launch a container name Abathur. It will be a Python container, 2-slim
 # version, its /root folder will be bound to a HOME folder on your host, and
 # its 3000 port will be bound to the 3000 port of your virtual machine. You
 # will personalize this container so that you can use the Flask micro-framework
@@ -10,4 +10,13 @@
 # necessary commands in your repository.
 #
 
-docker run --name Abathur --publish 3000:3000 python:2-slim
+docker run --name Abathur --publish 3000:3000 --mount "type=bind,src=/home/docker,dst=/root" python:2-slim
+
+docker exec Abathur apt-get --yes update
+docker exec Abathur apt-get --yes upgrade
+docker exec Abathur pip install Flask
+
+cat > ~/
+from flask import Flask
+
+

@@ -7,4 +7,4 @@
 # marines and will be on the overmind network.
 #
 
-
+docker service create --replicas 2 --name marines --network overmind --env OC_USERNAME=bingo --env OC_PASSWD=bongo 42school/marine-squad
