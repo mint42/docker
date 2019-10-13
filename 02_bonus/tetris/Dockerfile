@@ -10,6 +10,6 @@ COPY ./global-settings.ini ~/.local/share/yetris/
 COPY ./settings.ini ~/.local/share/yetris/mint/
 COPY ./theme.ini ~/.local/share/yetris/mint/
 
-ENTRYPOINT ["yetris"]
+ENTRYPOINT ["yetris"] 
 
 MAINTAINER rreedy
