@@ -1,10 +1,10 @@
 FROM archlinux/base
 
-RUN pacman -Syu --no-confirm && \
-	pacman -S gcc lldb git make vim bash
+RUN pacman -Syu --noconfirm
+RUN pacman -S --noconfirm gcc lldb git make vim bash
 
-COPY ./bashrc ~
-COPY ./vimrc ~
+COPY ./bashrc ~/.bashrc
+COPY ./vimrc ~/.vimrc
 
 CMD ["bash"]
 
